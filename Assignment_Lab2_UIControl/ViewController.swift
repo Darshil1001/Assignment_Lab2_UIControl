@@ -9,8 +9,8 @@ import UIKit
 
 class ViewController: UIViewController {
 
-    var num = 0
-    var key = 0
+    var num:Int = 0
+    var key:Int = 0
     @IBAction func btnIncrement(_ sender: UIButton) {
         if(key == 0)
         {
@@ -42,6 +42,7 @@ class ViewController: UIViewController {
     @IBOutlet weak var textNum: UILabel!
     override func viewDidLoad() {
         super.viewDidLoad()
+        num = Int(textNum.text!) ?? 0
         // Do any additional setup after loading the view.
     }
 
